@@ -1,7 +1,7 @@
 <?php
 session_start();
 function getFolderProject(){
-  if (strpos(__DIR__,'/') !== true){
+  if (strpos(__DIR__, '/') !== false){
     $root = str_replace('/opt/lampp/htdocs/', '/', __DIR__);
   }else{
     $root = str_replace('C:\\xampp\\htdocs\\', '/', __DIR__);
