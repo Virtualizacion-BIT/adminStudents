@@ -28,7 +28,7 @@ if (isset($_POST) && !empty($_POST)) {
 </head>
 
 <body>
-  <? include_once('menu.php') ?>
+  <?php include_once('menu.php') ?>
   <div class="container">
     <h2 class="mt-5 mb-5"> Registrar nuevo studiante </h2>
     <form method="POST" enctype="multipart/form-data">

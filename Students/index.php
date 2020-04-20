@@ -17,7 +17,7 @@ $students = $student->getStudents();
 </head>
 
 <body>
-  <? include_once('menu.php') ?>
+  <?php include_once('menu.php') ?>
   <div class="container">
     <h2 class="mt-5 mb-5"> Lista de estudiantes matriculados. </h2>
     <a class="btn btn-info mb-5 float-right" href="<?= ROOT ?>/Students/add.php"> Nuevo estudiante </a>

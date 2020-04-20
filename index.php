@@ -13,7 +13,7 @@ validateSession();
 </head>
 
 <body>
-  <? include_once('Teachers/menu.php'); ?>
+  <?php include_once('Teachers/menu.php'); ?>
   <div class="container">
     <h1> Bienvenido al administrador de estudiantes </h1>
   </div>

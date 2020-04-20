@@ -32,7 +32,7 @@ if (isset($_POST) && !empty($_POST)) {
 </head>
 
 <body>
-  <? include_once('menu.php'); ?>
+  <?php include_once('menu.php'); ?>
   <div class="container">
     <?= $error ? '<div class="alert alert-danger" role="alert"> Los datos están incorrectos. </div>' : ''; ?>
     <h2> Iniciar sesión </h2>
