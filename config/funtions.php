@@ -1,11 +1,18 @@
 <?php
 session_start();
+function getFolderProject(){
+  $root = str_replace('/opt/lampp/htdocs', '/', __DIR__);
+  $root = str_replace('C:\\xampp\\htdocs\\', '/', __DIR__);
+  $root = str_replace('config', '', $root);
+  return $root;
+}
+
 function getImageName($files)
 {
   $file_name = str_replace(' ', '', $files['image']['name']);
   $file_tmp = $files['image']['tmp_name'];
 
-  move_uploaded_file($file_tmp, $_SERVER['DOCUMENT_ROOT'] . '/BIT/adminToStudent/images/' . $file_name);
+  move_uploaded_file($file_tmp, $_SERVER['DOCUMENT_ROOT'] . getFolderProject().'/images/' . $file_name);
   return $file_name;
 }
 

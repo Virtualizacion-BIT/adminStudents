@@ -39,7 +39,7 @@ if (isset($_POST) && !empty($_POST)) {
       <div class="row mb-3">
         <div class="col">
           <input class="form-control" type="text" name="firstName" id="firstName" value="<?= $dataStudnet->firstName ?>" placeholder="Nombre estudiante" />
-          <input type="text" name="id" id="id" value="<?= $dataStudnet->id ?>" />
+          <input type="hidden" name="id" id="id" value="<?= $dataStudnet->id ?>" />
         </div>
         <div class="col">
           <input class="form-control" type="text" name="lastName" id="lastName" value="<?= $dataStudnet->lastName ?>" placeholder="Apellido estudiante" />

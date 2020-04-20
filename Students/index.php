@@ -34,7 +34,7 @@ $students = $student->getStudents();
         </tr>
       </thead>
       <tbody>
-        <? while ($student = mysqli_fetch_object($students)) {
+        <?php while ($student = mysqli_fetch_object($students)) {
           echo " <tr> ";
           echo " <td> $student->firstName</td> ";
           echo " <td> $student->lastName </td> ";

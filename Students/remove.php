@@ -1,4 +1,5 @@
 <?php
+include_once('../config/config.php');
 include_once('Student.php'); //Incluimos la clase Teacher.
 $student = new Student(); // Creamos una nueva instancia de la clase Teacher.
   if ($student->remove($_GET['id'])){
